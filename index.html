@@ -17,23 +17,213 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="resources/modules/fetchProducts.js" type="module"></script>
     <script src="resources/modules/loadProducts.js" type="module"></script>
-    <script src="resources/modules/init.js" type="module" defer></script> <!-- New initialization script -->
+    <script src="resources/modules/init.js" type="module" defer></script>
 </head>
 
-<body class="bg-white dark:bg-black">
+<body class="bg-white dark:bg-black text-black dark:text-black">
     
     <!-- Layout with two stacked columns on mobile and two side by side on desktop -->
-    <div id="container" class="container mx-auto max-w-screen-md hidden">
-        <div id="grid-container" class="grid grid-cols-1 md:grid-cols-2 md:gap-0 w-full">
+    <div id="container" class="container mx-auto max-w-screen-lg">
+        <div id="grid-container" class="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1.5fr] divide-y-8 lg:divide-y-0 lg:divide-x-8 divide-black w-full lg:my-16 bg-[#fad85b] dark:bg-white">
 
             <!-- Column 1: Modules column -->
-            <div id="modules-column">
-                <!-- Content for modules column can go here -->
+            <div id="modules-column" class="grid grid-cols-1 divide-y-2 divide-black w-full aspect-[3/1]">
+                <div class="flex justify-between items-center px-4 py-3">
+                    <h1 class="text-lg font-semibold">Country</h1>
+                    <h1 class="text-lg font-semibold">🇸🇪</h1>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">✅</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Netto</h2>
+                    <h2 class="text-sm font-semibold">☑️</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Bilka</h2>
+                    <h2 class="text-sm font-semibold">☑️</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Føtex</h2>
+                    <h2 class="text-sm font-semibold">☑️</h2>
+                </div>
+                <div></div>
             </div>
 
             <!-- Column 2: Products column -->
-            <div id="products-column">
-                <!-- Products will be dynamically added here -->
+            <div id="products-column" class="grid grid-cols-1 divide-y-2 divide-black w-full aspect-[3/1]">
+                <div class="flex justify-between items-center px-4 py-3">
+                    <h1 class="text-lg font-semibold">whole milk_</h1>
+                    <h1 class="text-lg font-semibold">🔍</h1>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                    <h2 class="text-sm font-semibold">→</h2>
+                </div>
+                <!--
+                <div id="products" class="px-4 py-3"></div>
+                -->
+            </div>
+
+            <!-- Column 3: Cart column -->
+            <div id="cart-column" class="grid grid-cols-1 divide-y-2 divide-black w-full aspect-[3/1]">
+                <div class="flex justify-between items-center px-4 py-3">
+                    <h1 class="text-lg font-semibold">Your cart</h1>
+                    <h1 class="text-lg font-semibold">🛒</h1>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
+                <div class="flex justify-between items-center px-4 py-2">
+                    <h2 class="text-sm font-semibold">←</h2>
+                    <h2 class="text-sm font-semibold">Whole milk</h2>
+                    <h2 class="text-sm font-semibold">14 kr.</h2>
+                    <h2 class="text-sm font-semibold">Rema 1000</h2>
+                </div>
             </div>
         </div>
     </div>
